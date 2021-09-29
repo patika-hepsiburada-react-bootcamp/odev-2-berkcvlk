@@ -8,6 +8,8 @@ export const Stage = styled("div", {
 });
 
 export const Upper = styled("div", {
+  dFlex: "initial space-between",
+  flexDirection: "column",
   maxWidth: "1140px",
   paddingX: "134px",
   height: "70%",
@@ -28,6 +30,7 @@ export const Lower = styled("div", {
 export const MadeWithLove = styled("span", {
   fontSize: "$2",
   fontWeight: "500",
+  marginTop: "5%",
   color: "$gray600",
 
   "&:hover a": {
@@ -36,6 +39,23 @@ export const MadeWithLove = styled("span", {
 });
 
 export const Main = styled("main", {
-  height: "100%",
-  marginTop: "50px",
+  dFlex: "flex-end space-between",
+});
+
+export const GallowStage = styled("div", {
+  width: "max-content",
+  position: "relative",
+
+  "&::after": {
+    content: "",
+    display: "block",
+    position: "absolute",
+    width: "100%",
+    height: "16px",
+    border: "2px solid $darkPurple",
+    borderBottom: "none",
+    bottom: "-2px",
+    borderRadius: "6px 6px 0 0",
+    backgroundColor: "$creamDarker",
+  },
 });
