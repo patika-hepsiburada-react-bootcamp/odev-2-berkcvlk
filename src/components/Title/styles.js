@@ -2,6 +2,7 @@ import { styled } from "stitches";
 
 export const Title = styled("h1", {
   width: "100%",
+  fontFamily: "$mono",
   fontSize: "$4",
   fontWeight: "600",
   marginTop: "0",
@@ -17,6 +18,7 @@ export const Title = styled("h1", {
     transform: "translate(-25%, -20%)",
     zIndex: "0",
     opacity: "0.05",
+    fontFamily: "$mono",
     fontSize: "$5",
   },
 
@@ -37,7 +39,7 @@ export const Title = styled("h1", {
         },
       },
       gold: {
-        color: "$gold",
+        color: "$orange",
         "&:before": {
           content: "Congratulations",
         },

@@ -3,7 +3,7 @@ import { Title } from "components";
 const Win = () => {
   return (
     <div>
-      <Title color="gold">Congratulations</Title>
+      <Title color="gold">Congratulations!</Title>
     </div>
   );
 };

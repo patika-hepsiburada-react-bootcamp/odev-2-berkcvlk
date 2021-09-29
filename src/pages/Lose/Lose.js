@@ -3,7 +3,7 @@ import { Title } from "components";
 const Lose = () => {
   return (
     <div>
-      <Title color="red">game over</Title>
+      <Title color="red">Game Over!</Title>
     </div>
   );
 };

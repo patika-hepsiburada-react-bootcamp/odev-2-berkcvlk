@@ -3,7 +3,7 @@ import { Title } from "components";
 const NotFound = () => {
   return (
     <div>
-      <Title color="blue">Knock Knock</Title>
+      <Title color="blue">Knock, Knock...</Title>
     </div>
   );
 };
