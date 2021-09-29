@@ -1,9 +1,15 @@
+import { Logo } from "components";
+import * as S from "./styles";
+
 const Stage = ({ children }) => {
   return (
-    <div>
-      Stage
-      {children}
-    </div>
+    <S.Stage>
+      <S.Upper>
+        <Logo />
+        {children}
+      </S.Upper>
+      <S.Lower />
+    </S.Stage>
   );
 };
 
