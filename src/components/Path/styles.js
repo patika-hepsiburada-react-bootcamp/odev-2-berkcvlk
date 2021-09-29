@@ -11,5 +11,5 @@ export const Path = styled("path", {
   stroke: "transparent",
   strokeDasharray: "450",
   strokeDashoffset: "450",
-  animation: `${squiggle} 2.5s ease forwards`,
+  animation: `${squiggle} 1.5s ease forwards`,
 });
