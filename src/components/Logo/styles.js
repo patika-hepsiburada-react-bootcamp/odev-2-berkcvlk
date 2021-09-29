@@ -2,6 +2,7 @@ import { styled } from "stitches";
 
 export const Logo = styled("div", {
   width: "max-content",
+  userSelect: "none",
 });
 
 export const LogoUpper = styled("div", {
@@ -9,8 +10,8 @@ export const LogoUpper = styled("div", {
 });
 
 export const Letter = styled("span", {
-  fontSize: "75px",
-  fontWeight: "600",
+  fontSize: "70px",
+  fontWeight: "800",
   color: "#fff",
   WebkitTextStroke: "3px #6d6875",
 });
@@ -18,15 +19,15 @@ export const Letter = styled("span", {
 export const Rope = styled("div", {
   width: "44px",
   height: "196px",
-  marginX: "10px",
+  marginX: "6px",
   backgroundImage: "url('assets/rope.svg')",
   backgroundRepeat: "no-repeat",
 });
 
-export const LogoDesc = styled("p", {
-  fontSize: "$1",
+export const Motto = styled("p", {
+  fontSize: "$2",
   fontWeight: "600",
   textTransform: "uppercase",
   color: "$gray600",
-  marginY: "4px",
+  marginY: "6px",
 });

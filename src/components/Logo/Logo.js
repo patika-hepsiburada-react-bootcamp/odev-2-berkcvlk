@@ -8,7 +8,7 @@ const Logo = () => {
         <S.Rope />
         <S.Letter>T</S.Letter>
       </S.LogoUpper>
-      <S.LogoDesc>Hang The Man</S.LogoDesc>
+      <S.Motto>Hang The Man</S.Motto>
     </S.Logo>
   );
 };
