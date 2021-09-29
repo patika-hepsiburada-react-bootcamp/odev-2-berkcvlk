@@ -10,14 +10,14 @@ export const Stage = styled("div", {
 export const Upper = styled("div", {
   maxWidth: "1140px",
   paddingX: "134px",
-  height: "calc(100% - 355px)",
+  height: "70%",
   marginX: "auto",
 });
 
 export const Lower = styled("div", {
   dFlex: "center center",
   width: "100%",
-  height: "355px",
+  height: "30%",
   backgroundColor: "$cream",
   backgroundImage: "url('assets/background-shadow.svg')",
   backgroundRepeat: "no-repeat",
