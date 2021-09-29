@@ -9,6 +9,7 @@ export const Stage = styled("div", {
 
 export const Upper = styled("div", {
   maxWidth: "1140px",
+  paddingX: "134px",
   height: "calc(100% - 355px)",
   marginX: "auto",
 });
@@ -19,5 +20,6 @@ export const Lower = styled("div", {
   backgroundColor: "$cream",
   backgroundImage: "url('assets/background-shadow.svg')",
   backgroundRepeat: "no-repeat",
+  backgroundSize: "100%",
   borderTop: "2px solid $darkPurple",
 });
