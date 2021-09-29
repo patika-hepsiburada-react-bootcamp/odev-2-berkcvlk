@@ -27,3 +27,8 @@ button {
   border: none;
   cursor: pointer;
 }
+
+a {
+  outline: none;
+  color: inherit;
+}
