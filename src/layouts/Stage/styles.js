@@ -37,6 +37,5 @@ export const MadeWithLove = styled("span", {
 
 export const Main = styled("main", {
   height: "100%",
-  backgroundColor: "$blue",
   marginTop: "50px",
 });

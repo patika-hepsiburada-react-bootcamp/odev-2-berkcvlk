@@ -1,4 +1,4 @@
-import { Logo } from "components";
+import { Logo, Gallow } from "components";
 import * as S from "./styles";
 
 const Stage = ({ children }) => {
@@ -6,7 +6,10 @@ const Stage = ({ children }) => {
     <S.Stage>
       <S.Upper>
         <Logo />
-        <S.Main>{children}</S.Main>
+        <S.Main>
+          {children}
+          <Gallow />
+        </S.Main>
       </S.Upper>
       <S.Lower>
         <S.MadeWithLove>
