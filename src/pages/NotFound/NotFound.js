@@ -1,5 +1,11 @@
+import { Title } from "components";
+
 const NotFound = () => {
-  return <div>404</div>;
+  return (
+    <div>
+      <Title color="blue">Knock Knock</Title>
+    </div>
+  );
 };
 
 export default NotFound;

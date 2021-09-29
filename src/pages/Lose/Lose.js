@@ -1,5 +1,11 @@
+import { Title } from "components";
+
 const Lose = () => {
-  return <div>Lose</div>;
+  return (
+    <div>
+      <Title color="red">game over</Title>
+    </div>
+  );
 };
 
 export default Lose;

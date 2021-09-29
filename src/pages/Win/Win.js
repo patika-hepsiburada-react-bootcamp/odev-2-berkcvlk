@@ -1,5 +1,11 @@
+import { Title } from "components";
+
 const Win = () => {
-  return <div>Win</div>;
+  return (
+    <div>
+      <Title color="gold">Congratulations</Title>
+    </div>
+  );
 };
 
 export default Win;

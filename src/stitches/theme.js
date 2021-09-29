@@ -17,7 +17,8 @@ export const theme = {
     1: "12px",
     2: "14px",
     3: "18px",
-    4: "34px",
+    4: "30px",
+    5: "55px",
   },
   fonts: {
     mono: "'Roboto Mono', monospace",
