@@ -8,6 +8,7 @@ import { theme } from "./theme";
 // constant and create component from it.
 export const {
   styled, // To create stitched components
+  keyframes,
 } = createStitches({
   theme,
   utils,
