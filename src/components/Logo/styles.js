@@ -9,7 +9,7 @@ export const LogoUpper = styled("div", {
 });
 
 export const Letter = styled("span", {
-  fontSize: "70px",
+  fontSize: "75px",
   fontWeight: "600",
   color: "#fff",
   WebkitTextStroke: "3px #6d6875",
