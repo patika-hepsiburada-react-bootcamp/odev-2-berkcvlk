@@ -6,9 +6,13 @@ const Stage = ({ children }) => {
     <S.Stage>
       <S.Upper>
         <Logo />
-        {children}
+        <S.Main>{children}</S.Main>
       </S.Upper>
-      <S.Lower />
+      <S.Lower>
+        <S.MadeWithLove>
+          Made with love by <a href="https://github.com/berkcvlk">Berk</a>
+        </S.MadeWithLove>
+      </S.Lower>
     </S.Stage>
   );
 };

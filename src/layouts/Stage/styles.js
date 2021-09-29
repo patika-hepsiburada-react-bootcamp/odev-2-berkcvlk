@@ -15,6 +15,7 @@ export const Upper = styled("div", {
 });
 
 export const Lower = styled("div", {
+  dFlex: "center center",
   width: "100%",
   height: "355px",
   backgroundColor: "$cream",
@@ -22,4 +23,20 @@ export const Lower = styled("div", {
   backgroundRepeat: "no-repeat",
   backgroundSize: "100%",
   borderTop: "2px solid $darkPurple",
+});
+
+export const MadeWithLove = styled("span", {
+  fontSize: "$2",
+  fontWeight: "500",
+  color: "$gray600",
+
+  "&:hover a": {
+    color: "$blue",
+  },
+});
+
+export const Main = styled("main", {
+  height: "100%",
+  backgroundColor: "$blue",
+  marginTop: "50px",
 });
