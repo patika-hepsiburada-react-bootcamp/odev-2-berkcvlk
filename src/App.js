@@ -5,13 +5,13 @@ import { routes } from "routes";
 
 const App = () => {
   return (
-    <Switch>
-      <Stage>
+    <Stage>
+      <Switch>
         {routes.map((route) => (
           <Route key={route.path} {...route} />
         ))}
-      </Stage>
-    </Switch>
+      </Switch>
+    </Stage>
   );
 };
 
@@ -23,4 +23,6 @@ export default App;
  * Yanlış sayısı (max 5)
  * Yanlış sayısına göre -> SVG Manipülasyon
  * Oyun Durumuna göre -> SVG Render
+ * Oyun -> Tıklanan harfin olup olmaması, varsa açılması yoksa deactive edilmesi
+ * olmadığı durumlarda yanlış sayısının düşürülmesi
  */
