@@ -7,7 +7,7 @@ const Stage = ({ children }) => {
       <S.Upper>
         <Logo />
         <S.Main>
-          {children}
+          <S.PageContainer>{children}</S.PageContainer>
           <S.GallowStage>
             <Gallow />
           </S.GallowStage>

@@ -42,6 +42,14 @@ export const Main = styled("main", {
   dFlex: "flex-end space-between",
 });
 
+export const PageContainer = styled("div", {
+  flex: "1 1 0",
+  dFlex: "initial space-between",
+  flexDirection: "column",
+  paddingTop: "32px",
+  height: "100%",
+});
+
 export const GallowStage = styled("div", {
   width: "max-content",
   position: "relative",
@@ -55,7 +63,7 @@ export const GallowStage = styled("div", {
     border: "2px solid $darkPurple",
     borderBottom: "none",
     bottom: "-2px",
-    borderRadius: "6px 6px 0 0",
+    borderRadius: "4px 4px 0 0",
     backgroundColor: "$creamDarker",
   },
 });
