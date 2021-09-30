@@ -1,3 +1,3 @@
 # Patika - Hepsiburada React Bootcamp - Ödev 2
 
-Will be updated, soon.
+[live](https://odev-2-berkcvlk.vercel.app/)
