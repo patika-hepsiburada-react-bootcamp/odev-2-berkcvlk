@@ -11,7 +11,7 @@ export const theme = {
     gray600: "#c7c7c7",
     bg100: "#fafafa",
     bg200: "#f5f5f5",
-    bg300: "e0e0e0",
+    bg300: "#e0e0e0",
   },
   fontSizes: {
     1: "12px",
