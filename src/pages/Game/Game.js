@@ -1,5 +1,7 @@
+import { Page } from "layouts";
+
 const Game = () => {
-  return <div>Game</div>;
+  return <Page>Game</Page>;
 };
 
 export default Game;

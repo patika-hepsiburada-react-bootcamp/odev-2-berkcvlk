@@ -1,7 +1,7 @@
-import React from "react";
+import { Page } from "layouts";
 
 const Start = () => {
-  return <div>Start</div>;
+  return <Page>Start</Page>;
 };
 
 export default Start;

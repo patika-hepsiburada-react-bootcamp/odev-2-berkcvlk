@@ -1,10 +1,11 @@
+import { Page } from "layouts";
 import { Title } from "components";
 
 const NotFound = () => {
   return (
-    <div>
+    <Page>
       <Title color="blue">Knock, Knock...</Title>
-    </div>
+    </Page>
   );
 };
 

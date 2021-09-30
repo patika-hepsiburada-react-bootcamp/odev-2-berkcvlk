@@ -1,10 +1,11 @@
+import { Page } from "layouts";
 import { Title } from "components";
 
 const Win = () => {
   return (
-    <div>
+    <Page>
       <Title color="gold">Congratulations!</Title>
-    </div>
+    </Page>
   );
 };
 
