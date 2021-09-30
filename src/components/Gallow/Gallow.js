@@ -1,3 +1,7 @@
+import { useContext } from "react";
+
+import { GameContext } from "store/gameContext";
+import { GAME_STATUS, MAX_ATTEMPT_COUNT } from "constants/game";
 import Ghosts from "./Ghosts/Ghosts";
 import Woods from "./Woods/Woods";
 import ManWinner from "./ManWinner/ManWinner";
@@ -5,15 +9,10 @@ import Rope from "./Rope/Rope";
 import Man from "./Man/Man";
 
 const Gallow = (props) => {
-  const { isWinner, man } = {
-    isWinner: false,
-    man: {
-      status: false,
-      pieces: 5,
-    },
-  };
+  const { attempts, status } = useContext(GameContext);
 
-  const isDead = man.status && man.pieces === 5;
+  const isWinner = status === GAME_STATUS.WIN;
+  const isDead = !isWinner && attempts === MAX_ATTEMPT_COUNT;
   const hasRope = !isWinner;
 
   return (
@@ -22,7 +21,7 @@ const Gallow = (props) => {
         {isDead && <Ghosts />}
         <Woods />
         <Rope hasRopeHead={hasRope} />
-        {man.status && <Man pieces={man.pieces} />}
+        {!isWinner && <Man pieces={attempts} />}
         {isWinner && <ManWinner />}
       </g>
     </svg>
