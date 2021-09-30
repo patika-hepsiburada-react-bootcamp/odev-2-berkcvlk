@@ -44,8 +44,6 @@ export const Main = styled("main", {
 
 export const PageContainer = styled("div", {
   flex: "1 1 0",
-  dFlex: "initial space-between",
-  flexDirection: "column",
   paddingTop: "32px",
   height: "100%",
 });
