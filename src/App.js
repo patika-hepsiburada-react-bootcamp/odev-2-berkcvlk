@@ -16,13 +16,3 @@ const App = () => {
 };
 
 export default App;
-
-/**
- * Sayfalar -> Start, Win, Lose, Game
- * Oyun Durumu (Game Status)
- * Yanlış sayısı (max 5)
- * Yanlış sayısına göre -> SVG Manipülasyon
- * Oyun Durumuna göre -> SVG Render
- * Oyun -> Tıklanan harfin olup olmaması, varsa açılması yoksa deactive edilmesi
- * olmadığı durumlarda yanlış sayısının düşürülmesi
- */
