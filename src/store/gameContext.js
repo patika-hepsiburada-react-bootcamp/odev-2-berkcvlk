@@ -1,40 +1,57 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useCallback } from "react";
+
 import { GAME_STATUS, MAX_ATTEMPT_COUNT } from "constants/game";
 import { revealString } from "utils";
 
-// CONTAINS
-// status => "WIN", "LOSE", "START"
-// attempts
-// attemptedChars
-// word
+/**
+ * Context for game propierties and functionalities
+ * @typedef GameContext
+ * @property {"WIN" | "LOSE" | "START"} status Game status state
+ * @property {string} word Word state to guess/reveal for the game
+ * @property {number} attempts User attempts count
+ * @property {string[]} clickedKeys User clicked keys to compare with the word state
+ */
 export const GameContext = createContext(null);
 
 const Provider = ({ children }) => {
-  const [status, setStatus] = useState(GAME_STATUS.START);
+  const [status, setStatus] = useState("");
   const [word, setWord] = useState("");
-  const [isLoading, setIsLoading] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const [attempts, setAttempts] = useState(0);
   const [clickedKeys, setClickedKeys] = useState([]);
 
+  // Each game reset fetch another random
+  // word from api.
   useEffect(() => {
     if (status === GAME_STATUS.START) {
       fetchRandomWord();
     }
   }, [status]);
 
+  // Whenever user interact with the keyboard listen for keys clicked
+  // and check if the user won.
+  const isUserWinner = useCallback(() => {
+    return word && revealString(word, clickedKeys).indexOf("_") === -1;
+  }, [clickedKeys, word]);
+
+  useEffect(() => {
+    if (isUserWinner()) {
+      setStatus(GAME_STATUS.WIN);
+    }
+  }, [isUserWinner]);
+
+  // If the user hit the max attempt count
+  // set the game status to redirect to the lose page
   useEffect(() => {
     if (attempts === MAX_ATTEMPT_COUNT) {
       setStatus(GAME_STATUS.LOSE);
     }
-
-    if (word && revealString(word, clickedKeys).indexOf("_") === -1) {
-      setStatus(GAME_STATUS.WIN);
-    }
-  }, [attempts, clickedKeys, word]);
+  }, [attempts]);
 
   const reset = () => {
     setAttempts(0);
     setClickedKeys([]);
+    setIsLoading(true);
     setStatus(GAME_STATUS.START);
   };
 
