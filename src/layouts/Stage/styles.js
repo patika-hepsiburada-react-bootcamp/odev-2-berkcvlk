@@ -38,14 +38,8 @@ export const MadeWithLove = styled("span", {
   },
 });
 
-export const Main = styled("main", {
+export const Container = styled("div", {
   dFlex: "flex-end space-between",
-});
-
-export const PageContainer = styled("div", {
-  flex: "1 1 0",
-  paddingTop: "32px",
-  height: "100%",
 });
 
 export const GallowStage = styled("div", {
