@@ -16,6 +16,7 @@ export const Container = styled("div", {
   height: "100%",
   dFlex: "initial space-between",
   flexDirection: "column",
+  paddingTop: "32px",
   animation: `${slideInUp} 0.3s ease`,
 });
 
