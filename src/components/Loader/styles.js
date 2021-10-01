@@ -17,6 +17,12 @@ const ripple = keyframes({
   },
 });
 
+export const Wrapper = styled("div", {
+  width: "100%",
+  height: "50%",
+  dFlex: "center center",
+});
+
 export const Loader = styled("div", {
   display: "inline-block",
   position: "relative",
@@ -26,12 +32,12 @@ export const Loader = styled("div", {
 
 export const FirstChild = styled("div", {
   position: "absolute",
-  border: "4px solid #fff",
+  border: "4px solid $orange",
   opacity: "1",
   borderRadius: "50%",
   animation: `${ripple} 1s cubic-bezier(0, 0.2, 0.8, 1) infinite`,
 });
 
-export const SecondChild = styled("div", {
+export const SecondChild = styled(FirstChild, {
   animationDelay: "-0.5s",
 });
