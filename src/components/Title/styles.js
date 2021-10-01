@@ -2,7 +2,6 @@ import { styled } from "stitches";
 
 export const Title = styled("h1", {
   width: "100%",
-  fontFamily: "$mono",
   fontSize: "$4",
   fontWeight: "600",
   marginTop: "0",
