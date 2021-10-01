@@ -7,15 +7,20 @@ export const StyledLink = styled(Link, {
   color: "$gray500",
   textDecoration: "underline",
 
+  "&:hover": {
+    color: "$orange",
+  },
+
   variants: {
     size: {
       large: {
-        fontFamily: "$mono",
         fontSize: "$4",
-        fontWeight: "600",
+        fontWeight: "500",
         textTransform: "uppercase",
         color: "$darkPurple",
       },
     },
   },
+
+  transition: "all .24s",
 });
