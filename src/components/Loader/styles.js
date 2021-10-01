@@ -19,7 +19,7 @@ const ripple = keyframes({
 
 export const Wrapper = styled("div", {
   width: "100%",
-  height: "50%",
+  height: "100%",
   dFlex: "center center",
 });
 
