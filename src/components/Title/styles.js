@@ -2,7 +2,7 @@ import { styled } from "stitches";
 
 export const Title = styled("h1", {
   width: "100%",
-  fontSize: "$4",
+  fontSize: "$5",
   fontWeight: "600",
   marginTop: "0",
   marginBottom: "12px",
@@ -18,7 +18,7 @@ export const Title = styled("h1", {
     zIndex: "0",
     opacity: "0.05",
     fontFamily: "$mono",
-    fontSize: "$5",
+    fontSize: "$6",
   },
 
   variants: {

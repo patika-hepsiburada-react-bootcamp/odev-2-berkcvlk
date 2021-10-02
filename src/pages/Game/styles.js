@@ -2,7 +2,7 @@ import { styled } from "stitches";
 
 export const Word = styled("span", {
   fontFamily: "$mono",
-  fontSize: "$4",
+  fontSize: "$5",
   fontWeight: "600",
   textTransform: "uppercase",
   letterSpacing: "5px",
@@ -29,7 +29,7 @@ export const Text = styled("span", {
   variants: {
     color: {
       orange: {
-        fontSize: "$3",
+        fontSize: "$4",
         fontWeight: "600",
         color: "$orange",
       },

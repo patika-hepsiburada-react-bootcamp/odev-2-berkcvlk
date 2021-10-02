@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { styled } from "stitches";
 
 export const StyledLink = styled(Link, {
-  fontSize: "$",
+  fontSize: "$3",
   fontWeight: "500",
   color: "$gray500",
   textDecoration: "underline",
@@ -14,7 +14,7 @@ export const StyledLink = styled(Link, {
   variants: {
     size: {
       large: {
-        fontSize: "$4",
+        fontSize: "$5",
         fontWeight: "500",
         textTransform: "uppercase",
         color: "$darkPurple",
