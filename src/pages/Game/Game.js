@@ -2,7 +2,7 @@ import { useHistory } from "react-router";
 
 import { useStatusMatch, useGame } from "hooks";
 import { Page } from "layouts";
-import { Keyboard, Loader } from "components";
+import { Keyboard, Loader, Text } from "components";
 import { revealString } from "utils";
 import { MAX_ATTEMPT_COUNT } from "constants/game";
 import * as S from "./styles";
@@ -28,6 +28,7 @@ const Game = () => {
         <S.Text color="orange">{MAX_ATTEMPT_COUNT - attempts}</S.Text>
       </S.Chip>
       <Keyboard />
+      <Text size="small">You can use your keyboard!</Text>
     </Page>
   );
 };
