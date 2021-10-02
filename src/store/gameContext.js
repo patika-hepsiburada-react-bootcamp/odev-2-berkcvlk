@@ -60,6 +60,13 @@ const Provider = ({ children }) => {
   };
 
   const onKeyClick = (key) => {
+    // To prevent add existing key to the
+    // clickedkeys array and increase the
+    // failed attempt count
+    if (clickedKeys.indexOf(key) !== -1) {
+      return;
+    }
+
     // If pressed key does not help to reveal
     // the word, make the attempt fail
     if (word.indexOf(key) === -1) {
