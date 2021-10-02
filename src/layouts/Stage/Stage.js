@@ -1,13 +1,13 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { useHistory } from "react-router";
 
-import { GameContext } from "store/gameContext";
+import { useGame } from "hooks";
 import { GAME_STATUS } from "constants/game";
 import { Logo, Gallow } from "components";
 import * as S from "./styles";
 
 const Stage = ({ children }) => {
-  const { status } = useContext(GameContext);
+  const { status } = useGame();
   const { push } = useHistory();
 
   /**

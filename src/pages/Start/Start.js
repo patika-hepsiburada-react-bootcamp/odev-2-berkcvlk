@@ -1,11 +1,9 @@
-import { useContext } from "react";
-
 import { Page } from "layouts";
 import { Link, Text, Illustration } from "components";
-import { GameContext } from "store/gameContext";
+import { useGame } from "hooks";
 
 const Start = () => {
-  const { reset } = useContext(GameContext);
+  const { reset } = useGame();
 
   return (
     <Page Illustration={Illustration.ManSide}>

@@ -1,6 +1,4 @@
-import { useContext } from "react";
-
-import { GameContext } from "store/gameContext";
+import { useGame } from "hooks";
 import { GAME_STATUS } from "constants/game";
 
 /**
@@ -10,7 +8,7 @@ import { GAME_STATUS } from "constants/game";
  * @return {boolean} If match returns true
  */
 const useStatusMatch = (path) => {
-  const { status } = useContext(GameContext);
+  const { status } = useGame();
 
   if (status === GAME_STATUS[path.toUpperCase()]) {
     return true;

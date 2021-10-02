@@ -1,10 +1,10 @@
-import { useState, useContext } from "react";
-import { GameContext } from "store/gameContext";
+import { useState } from "react";
 
+import { useGame } from "hooks";
 import * as S from "./styles";
 
 const Key = ({ value, ...rest }) => {
-  const { onKeyClick } = useContext(GameContext);
+  const { onKeyClick } = useGame();
   const [disable, setDisable] = useState(false);
 
   const handleClick = () => {

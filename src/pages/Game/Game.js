@@ -1,18 +1,16 @@
-import { useContext } from "react";
 import { useHistory } from "react-router";
 
-import { useStatusMatch } from "hooks";
+import { useStatusMatch, useGame } from "hooks";
 import { Page } from "layouts";
 import { Keyboard, Loader } from "components";
 import { revealString } from "utils";
-import { GameContext } from "store/gameContext";
 import { MAX_ATTEMPT_COUNT } from "constants/game";
 import * as S from "./styles";
 
 const Game = () => {
-  const { word, isLoading, clickedKeys, attempts } = useContext(GameContext);
-  const { push } = useHistory();
+  const { word, isLoading, clickedKeys, attempts } = useGame();
   const isMatched = useStatusMatch("start");
+  const { push } = useHistory();
 
   if (!isMatched) {
     push("/");
