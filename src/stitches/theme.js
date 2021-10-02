@@ -16,9 +16,10 @@ export const theme = {
   fontSizes: {
     1: "12px",
     2: "14px",
-    3: "18px",
-    4: "30px",
-    5: "55px",
+    3: "16px",
+    4: "18px",
+    5: "30px",
+    6: "55px",
   },
   fonts: {
     mono: "'Roboto Mono', monospace",
