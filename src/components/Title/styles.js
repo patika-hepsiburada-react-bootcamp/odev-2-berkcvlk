@@ -14,7 +14,7 @@ export const Title = styled("h1", {
     content: "",
     display: "inline-block",
     whiteSpace: "nowrap",
-    transform: "translate(-25%, -20%)",
+    transform: "translate(-25%, -30%)",
     zIndex: "0",
     opacity: "0.05",
     fontFamily: "$mono",
