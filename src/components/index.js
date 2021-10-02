@@ -7,3 +7,4 @@ export { default as Link } from "./Link/Link";
 export { default as Keyboard } from "./Keyboard/Keyboard";
 export { default as Loader } from "./Loader/Loader";
 export { default as Text } from "./Text/Text";
+export { default as DefinitionMark } from "./DefinitionMark/DefinitionMark";

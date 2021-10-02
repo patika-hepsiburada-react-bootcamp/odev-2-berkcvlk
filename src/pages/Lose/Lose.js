@@ -2,7 +2,7 @@ import { useHistory } from "react-router";
 
 import { Page } from "layouts";
 import { useStatusMatch, useGame } from "hooks";
-import { Title, Link, Illustration, Text } from "components";
+import { Title, Link, Illustration, Text, DefinitionMark } from "components";
 
 const Lose = () => {
   const { push } = useHistory();
@@ -21,6 +21,7 @@ const Lose = () => {
         <Text behaviour="inline" color="orange">
           {word}
         </Text>
+        <DefinitionMark word={word} />
       </Text>
       <Link to="/">Try it again</Link>
     </Page>

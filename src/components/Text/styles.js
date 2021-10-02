@@ -1,7 +1,7 @@
 import { styled } from "stitches";
 
 export const Text = styled("span", {
-  display: "block",
+  dFlex: "center start",
   fontSize: "$3",
   fontWeight: "500",
   color: "$gray500",
