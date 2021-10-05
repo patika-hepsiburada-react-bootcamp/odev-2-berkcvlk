@@ -4,6 +4,7 @@ import { Loader } from "components";
 import * as S from "./styles";
 
 // Component will be refactored, later.. I hope..
+// Soon...
 const DefinitionMark = ({ word, ...rest }) => {
   const [definition, setDefinition] = useState("");
   const [phonetic, setPhonetic] = useState("");
